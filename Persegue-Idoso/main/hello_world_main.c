@@ -6,8 +6,10 @@
 #include "esp_log.h"
 #include "freertos/semphr.h"
 
+// Seus módulos
 #include "wifi_modulo.h"
 #include "mqtt_modulo.h"
+#include "acelerometro_modulo.h"
 
 SemaphoreHandle_t conexaoWifiSemaphore;
 SemaphoreHandle_t conexaoMQTTSemaphore;
@@ -18,6 +20,7 @@ void conectadoWifi(void * params)
   {
     if(xSemaphoreTake(conexaoWifiSemaphore, portMAX_DELAY))
     {
+      ESP_LOGI("Main", "Wifi Conectado. Iniciando MQTT...");
       mqtt_start();
     }
   }
@@ -25,14 +28,41 @@ void conectadoWifi(void * params)
 
 void trataComunicacaoComServidor(void * params)
 {
-  char mensagem[50];
+  char mensagem[128]; 
+  
+  // Aguarda o MQTT conectar
   if(xSemaphoreTake(conexaoMQTTSemaphore, portMAX_DELAY))
   {
+    ESP_LOGI("Main", "MQTT Conectado. Iniciando MPU6050...");
+
+    // <--- 2. Inicializa o sensor aqui
+    if (mpu6050_init() != ESP_OK) {
+        ESP_LOGE("Main", "Falha no MPU6050! Reiniciando task...");
+        vTaskDelete(NULL); // Ou trata o erro como preferir
+    }
+
     while(true)
     {
-       float temperatura = 20.0 + (float)rand()/(float)(RAND_MAX/10.0);
-       sprintf(mensagem, "temperatura1: %f", temperatura);
-       mqtt_envia_mensagem("sensores/temperatura", mensagem);
+       Mpu6050Data dados_mpu;
+
+       if(mpu6050_read(&dados_mpu) == ESP_OK) 
+       {
+
+           sprintf(mensagem, "{\"ax\": %d, \"ay\": %d, \"az\": %d, \"temp\": %.2f}", 
+                   dados_mpu.accel_x, 
+                   dados_mpu.accel_y, 
+                   dados_mpu.accel_z, 
+                   dados_mpu.temp);
+           
+           mqtt_envia_mensagem("sensores/mpu6050", mensagem);
+           
+           ESP_LOGI("Main", "Dados enviados: %s", mensagem);
+       } 
+       else 
+       {
+           ESP_LOGE("Main", "Erro de leitura I2C");
+       }
+
        vTaskDelay(3000 / portTICK_PERIOD_MS);
     }
   }
@@ -40,7 +70,6 @@ void trataComunicacaoComServidor(void * params)
 
 void app_main(void)
 {
-    // Inicializa o NVS
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
       ESP_ERROR_CHECK(nvs_flash_erase());
@@ -50,8 +79,9 @@ void app_main(void)
     
     conexaoWifiSemaphore = xSemaphoreCreateBinary();
     conexaoMQTTSemaphore = xSemaphoreCreateBinary();
+    
     wifi_start();
 
-    xTaskCreate(&conectadoWifi,  "Conexão ao MQTT", 4096, NULL, 1, NULL);
-    xTaskCreate(&trataComunicacaoComServidor, "Comunicação com Broker", 4096, NULL, 1, NULL);
+    xTaskCreate(&conectadoWifi,  "Conexão MQTT", 4096, NULL, 1, NULL);
+    xTaskCreate(&trataComunicacaoComServidor, "Envio Dados", 4096, NULL, 1, NULL);
 }
