@@ -43,6 +43,8 @@
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp_netif/libesp_netif.a
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp_coex/libesp_coex.a
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp-tls/libesp-tls.a
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/http_parser/libhttp_parser.a
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp_security/libesp_security.a
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/pthread/libpthread.a
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a
@@ -79,4 +81,10 @@
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/wpa_supplicant/libwpa_supplicant.a
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp_coex/libesp_coex.a
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp_wifi/libesp_wifi.a
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/http_parser/libhttp_parser.a
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp-tls/libesp-tls.a
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/tcp_transport/libtcp_transport.a
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mqtt/libmqtt.a
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/tcp_transport/libtcp_transport.a
 /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/main/libmain.a
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mqtt/libmqtt.a

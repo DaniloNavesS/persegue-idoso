@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "Persegue-Idoso",
-    "project_version":    "7d648f8-dirty",
+    "project_version":    "f64920c-dirty",
     "project_path":       "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso",
     "idf_path":           "/home/dan_fedora/esp/v5.5.1/esp-idf",
     "build_dir":          "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "xtensa-esp32-elf-",
     "c_compiler":         "/home/dan_fedora/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_coex/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_common/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_gpio/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_uart/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_event/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_hw_support/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_mm/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_netif/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_partition/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_phy/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_pm/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_ringbuf/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_security/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_system/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_timer/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_wifi/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/freertos/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/hal/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/log/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/lwip/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/mbedtls/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/newlib/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/nvs_flash/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/pthread/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/soc/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/vfs/Kconfig",
+        "COMPONENT_KCONFIGS" : "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_coex/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_common/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_gpio/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_uart/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_event/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_hw_support/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_mm/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_netif/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_partition/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_phy/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_pm/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_ringbuf/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_security/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_system/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_timer/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_wifi/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/freertos/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/hal/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/log/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/lwip/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/mbedtls/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/newlib/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/nvs_flash/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/pthread/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/soc/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/tcp_transport/Kconfig;/home/dan_fedora/esp/v5.5.1/esp-idf/components/vfs/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "/home/dan_fedora/esp/v5.5.1/esp-idf/components/bootloader/Kconfig.projbuild;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig.projbuild;/home/dan_fedora/esp/v5.5.1/esp-idf/components/esptool_py/Kconfig.projbuild;/home/dan_fedora/esp/v5.5.1/esp-idf/components/partition_table/Kconfig.projbuild;/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_gpio", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_hw_support", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "esptool_py", "freertos", "hal", "heap", "log", "lwip", "main", "mbedtls", "newlib", "nvs_flash", "partition_table", "pthread", "soc", "spi_flash", "vfs", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/app_update", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/bootloader", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/bootloader_support", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/cxx", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_app_format", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_coex", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_common", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_event", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_hw_support", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_mm", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_netif", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_netif_stack", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_partition", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_phy", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_pm", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_rom", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_security", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_system", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_timer", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_vfs_console", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_wifi", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esptool_py", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/freertos", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/hal", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/log", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/lwip", "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mbedtls", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/newlib", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/nvs_flash", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/partition_table", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/pthread", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/soc", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/vfs", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/wpa_supplicant", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp-tls", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_gpio", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_hw_support", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "esptool_py", "freertos", "hal", "heap", "http_parser", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "partition_table", "pthread", "soc", "spi_flash", "tcp_transport", "vfs", "wpa_supplicant", "xtensa", "" ],
+    "build_component_paths" : [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/app_update", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/bootloader", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/bootloader_support", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/cxx", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_app_format", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_coex", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_common", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_event", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_hw_support", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_mm", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_netif", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_netif_stack", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_partition", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_phy", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_pm", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_rom", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_security", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_system", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_timer", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_vfs_console", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_wifi", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esptool_py", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/freertos", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/hal", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/http_parser", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/log", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/lwip", "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mbedtls", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mqtt", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/newlib", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/nvs_flash", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/partition_table", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/pthread", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/soc", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/tcp_transport", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/vfs", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/wpa_supplicant", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -102,6 +102,21 @@
             "file": "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/efuse/libefuse.a",
             "sources": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/esp32/esp_efuse_table.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/esp32/esp_efuse_fields.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/esp32/esp_efuse_utility.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_api.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_fields.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_utility.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
             "include_dirs": [ "include", "esp32/include" ]
+        },
+        "esp-tls": {
+            "alias": "idf::esp-tls",
+            "target": "___idf_esp-tls",
+            "prefix": "idf",
+            "dir": "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls",
+            "type": "LIBRARY",
+            "lib": "__idf_esp-tls",
+            "reqs": [ "mbedtls" ],
+            "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp-tls/libesp-tls.a",
+            "sources": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls/esp-tls-crypto/esp_tls_crypto.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls_error_capture.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls_platform_port.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls_mbedtls.c" ],
+            "include_dirs": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls", "esp-tls-crypto" ]
         },
         "esp_app_format": {
             "alias": "idf::esp_app_format",
@@ -493,6 +508,21 @@
             "sources": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap/heap_caps_base.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap/heap_caps.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap/heap_caps_init.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap/multi_heap.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap/tlsf/tlsf.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap/port/memory_layout_utils.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/heap/port/esp32/memory_layout.c" ],
             "include_dirs": [ "include", "tlsf" ]
         },
+        "http_parser": {
+            "alias": "idf::http_parser",
+            "target": "___idf_http_parser",
+            "prefix": "idf",
+            "dir": "/home/dan_fedora/esp/v5.5.1/esp-idf/components/http_parser",
+            "type": "LIBRARY",
+            "lib": "__idf_http_parser",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/http_parser/libhttp_parser.a",
+            "sources": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/http_parser/http_parser.c" ],
+            "include_dirs": [ "." ]
+        },
         "log": {
             "alias": "idf::log",
             "target": "___idf_log",
@@ -531,12 +561,12 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "esp_wifi", "nvs_flash", "esp_event" ],
+            "priv_reqs": [ "spi_flash", "esp_wifi", "nvs_flash", "esp_event", "mqtt" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main/hello_world_main.c", "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main/include/wifi_modulo/wifi_modulo.c" ],
-            "include_dirs": [ ".", "include/wifi_modulo" ]
+            "sources": [ "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main/hello_world_main.c", "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main/include/wifi_modulo/wifi_modulo.c", "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main/include/mqtt_modulo/mqtt_modulo.c" ],
+            "include_dirs": [ ".", "include/wifi_modulo", "include/mqtt_modulo" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -552,6 +582,21 @@
             "file": "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mbedtls/libmbedtls.a",
             "sources": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/x509_crt_bundle.S" ],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
+        },
+        "mqtt": {
+            "alias": "idf::mqtt",
+            "target": "___idf_mqtt",
+            "prefix": "idf",
+            "dir": "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mqtt",
+            "type": "LIBRARY",
+            "lib": "__idf_mqtt",
+            "reqs": [ "esp_event", "tcp_transport" ],
+            "priv_reqs": [ "esp_timer", "http_parser", "esp_hw_support", "heap" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mqtt/libmqtt.a",
+            "sources": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c" ],
+            "include_dirs": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/mqtt/esp-mqtt/include" ]
         },
         "newlib": {
             "alias": "idf::newlib",
@@ -641,6 +686,21 @@
             "managed_priv_reqs": [],
             "file": "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/flash_brownout_hook.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_drivers.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_generic.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_issi.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_gd.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_winbond.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_boya.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_th.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/memspi_host_driver.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/cache_utils.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/flash_mmap.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/flash_ops.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_wrap.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_api.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_spi_init.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_app.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "tcp_transport": {
+            "alias": "idf::tcp_transport",
+            "target": "___idf_tcp_transport",
+            "prefix": "idf",
+            "dir": "/home/dan_fedora/esp/v5.5.1/esp-idf/components/tcp_transport",
+            "type": "LIBRARY",
+            "lib": "__idf_tcp_transport",
+            "reqs": [ "esp-tls", "lwip", "esp_timer" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/tcp_transport/libtcp_transport.a",
+            "sources": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/tcp_transport/transport.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/tcp_transport/transport_ssl.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/tcp_transport/transport_internal.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/tcp_transport/transport_socks_proxy.c", "/home/dan_fedora/esp/v5.5.1/esp-idf/components/tcp_transport/transport_ws.c" ],
             "include_dirs": [ "include" ]
         },
         "vfs": {
@@ -820,7 +880,7 @@
             "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build", "esp-tls-crypto" ]
+            "include_dirs": [ "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp-tls", "esp-tls-crypto" ]
         },
         "esp_adc": {
             "alias": "idf::esp_adc",
@@ -1993,10 +2053,10 @@
             "dir": "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "esp_wifi", "nvs_flash", "esp_event" ],
+            "priv_reqs": [ "spi_flash", "esp_wifi", "nvs_flash", "esp_event", "mqtt" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ ".", "include/wifi_modulo" ]
+            "include_dirs": [ ".", "include/wifi_modulo", "include/mqtt_modulo" ]
         }
     },
     "debug_prefix_map_gdbinit": "",

@@ -254,6 +254,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/http_parser/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/esp-tls/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/tcp_transport/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mqtt/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/main/cmake_install.cmake")
 endif()
 
