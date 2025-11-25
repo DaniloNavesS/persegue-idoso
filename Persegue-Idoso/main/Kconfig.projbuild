@@ -1,0 +1,21 @@
+menu "Configuração WiFi"
+
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "MinhaRede"
+        help
+            SSID da rede sem fio.
+
+    config ESP_WIFI_PASSWORD
+        string "WiFi Password"
+        default "MinhaSenha"
+        help
+            Senha da rede sem fio.
+
+    config ESP_MAXIMUM_RETRY
+        int "Maximum Retry"
+        default 5
+        help
+            Número máximo de tentativas de conexão.
+
+endmenu

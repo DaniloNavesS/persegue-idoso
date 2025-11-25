@@ -3,3 +3,4 @@ source "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_app_format/Kconfig.pr
 source "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig.projbuild"
 source "/home/dan_fedora/esp/v5.5.1/esp-idf/components/esptool_py/Kconfig.projbuild"
 source "/home/dan_fedora/esp/v5.5.1/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/main/Kconfig.projbuild"
