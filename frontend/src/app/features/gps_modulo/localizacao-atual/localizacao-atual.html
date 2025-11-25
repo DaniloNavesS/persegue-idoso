@@ -1,0 +1,27 @@
+<div class="absolute inset-0 overflow-hidden">
+    <div id="map-realtime" class="h-full w-full"></div>
+    
+    <div class="pointer-events-none absolute top-4 right-4 flex flex-col gap-2 z-999">
+      <div class="pointer-events-auto bg-white/90 backdrop-blur border border-black/10 shadow-lg rounded-md px-3 py-2 text-xs text-black">
+        <div class="font-medium mb-1">Localização Atual</div>
+        <div class="text-xs text-black/70">
+          @if (currentLocation()) {
+            <div>Lat: {{ currentLocation()?.lat | number:'1.6-6' }}</div>
+            <div>Lng: {{ currentLocation()?.lng | number:'1.6-6' }}</div>
+            <div class="text-green-600">● Ativo</div>
+          } @else {
+            <div class="text-red-600">● Inativo</div>
+          }
+        </div>
+      </div>
+      
+      <div class="pointer-events-auto bg-white/90 backdrop-blur border border-black/10 shadow-lg rounded-md p-2 flex items-center gap-2">
+        <button class="px-2 py-1 text-xs rounded border border-black/20 hover:bg-black/5" (click)="toggleTracking()">
+          {{ isTracking() ? 'Parar' : 'Iniciar' }} Rastreamento
+        </button>
+        <button class="px-2 py-1 text-xs rounded border border-black/20 hover:bg-black/5" (click)="centerOnLocation()">
+          Centralizar
+        </button>
+      </div>
+    </div>
+  </div>

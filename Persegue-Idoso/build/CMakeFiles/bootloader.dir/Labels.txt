@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/CMakeFiles/bootloader
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/CMakeFiles/bootloader.rule
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/CMakeFiles/bootloader-complete.rule
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

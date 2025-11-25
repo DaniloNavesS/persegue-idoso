@@ -1,0 +1,15 @@
+<div class="absolute inset-0 overflow-hidden">
+  <div id="map" class="h-full w-full"></div>
+
+  <div class="pointer-events-none absolute top-4 right-4 flex flex-col gap-2 z-999">
+    <div class="pointer-events-auto bg-white/90 backdrop-blur border border-black/10 shadow-lg rounded-md px-3 py-2 text-xs text-black">
+      Toque no mapa para adicionar 4 pontos da área segura.
+    </div>
+    <div class="pointer-events-auto bg-white/90 backdrop-blur border border-black/10 shadow-lg rounded-md p-2 flex items-center gap-2 z-999">
+      <input type="text" placeholder="Nome da área" class="px-2 py-1 text-xs rounded border border-black/20 focus:outline-none focus:ring-1 focus:ring-black/30" [ngModel]="areaName()" (ngModelChange)="areaName.set($event)" />
+      <button class="px-2 py-1 text-xs rounded border border-black/20 hover:bg-black/5" (click)="undoLastPoint()">Desfazer</button>
+      <button class="px-2 py-1 text-xs rounded border border-black/20 hover:bg-black/5" (click)="clearPoints()">Limpar</button>
+      <button class="px-2 py-1 text-xs rounded bg-black text-white disabled:opacity-50" [disabled]="selectedPoints().length !== 4 || saving()" (click)="saveArea()">Salvar área</button>
+    </div>
+  </div>
+</div>

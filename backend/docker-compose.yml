@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:13
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: sistema-idoso
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init_scripts/:/docker-entrypoint-initdb.d/:ro,z
+    user: "postgres"
+    ports:
+      - "5432:5432"
+volumes:
+  postgres_data:
