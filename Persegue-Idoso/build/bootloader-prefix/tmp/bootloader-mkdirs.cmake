@@ -3,25 +3,20 @@
 
 cmake_minimum_required(VERSION 3.5)
 
-# If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
-# existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
-# would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "/home/dan_fedora/esp/v5.5.1/esp-idf/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "/home/dan_fedora/esp/v5.5.1/esp-idf/components/bootloader/subproject")
-endif()
 file(MAKE_DIRECTORY
-  "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader"
-  "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix"
-  "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/tmp"
-  "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src"
-  "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/arthu/esp/v5.5.1/esp-idf/components/bootloader/subproject"
+  "/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader"
+  "/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix"
+  "/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/tmp"
+  "/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src"
+  "/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

@@ -4,7 +4,8 @@
 #include <stdint.h>
 #include "esp_err.h"
 
-typedef struct {
+typedef struct
+{
     int16_t accel_x;
     int16_t accel_y;
     int16_t accel_z;

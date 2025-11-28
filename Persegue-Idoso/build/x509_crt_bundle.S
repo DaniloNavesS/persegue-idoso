@@ -1,4 +1,4 @@
-/* * Data converted from /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

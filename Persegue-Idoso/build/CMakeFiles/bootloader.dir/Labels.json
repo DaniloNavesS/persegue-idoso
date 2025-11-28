@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/CMakeFiles/bootloader"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/CMakeFiles/bootloader.rule"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/home/arthu/UnB/8\u00b0 Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

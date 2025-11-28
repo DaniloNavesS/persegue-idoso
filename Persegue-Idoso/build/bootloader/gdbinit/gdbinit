@@ -1,2 +1,2 @@
-source /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader/gdbinit/symbols
-source /home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/bootloader/gdbinit/connect
+source /home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader/gdbinit/symbols
+source /home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/bootloader/gdbinit/connect

@@ -1,4 +1,4 @@
-idf_component_register(SRCS "hello_world_main.c"
+idf_component_register(SRCS "main.c"
                             "include/wifi_modulo/wifi_modulo.c"
                             "include/mqtt_modulo/mqtt_modulo.c"
                             "include/acelerometro_modulo/acelerometro_modulo.c"

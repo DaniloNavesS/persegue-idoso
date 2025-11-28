@@ -1,4 +1,4 @@
-# Install script for directory: /home/dan_fedora/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls
+# Install script for directory: /home/arthu/esp/v5.5.1/esp-idf/components/mbedtls/mbedtls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,17 +32,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
+# Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/dan_fedora/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
+  set(CMAKE_OBJDUMP "/home/arthu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
-  include("/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mbedtls/mbedtls/3rdparty/cmake_install.cmake")
-  include("/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
-  include("/home/dan_fedora/Cloud/UNB/fse/trabalho-3/Persegue-Idoso/build/esp-idf/mbedtls/mbedtls/pkgconfig/cmake_install.cmake")
+  include("/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
+  include("/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/esp-idf/mbedtls/mbedtls/3rdparty/cmake_install.cmake")
+  include("/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
+  include("/home/arthu/UnB/8° Sem/Embarcados/persegue-idoso/Persegue-Idoso/build/esp-idf/mbedtls/mbedtls/pkgconfig/cmake_install.cmake")
 
 endif()
 
