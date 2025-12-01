@@ -10,7 +10,15 @@ if (!token) {
 }
 
 // Cria a instância do bot
-export const bot = new TelegramBot(token, { polling: true });
+export const bot = new TelegramBot(token, { 
+    polling: true,
+    request: {
+        agentOptions: {
+            keepAlive: true,
+            family: 4
+        }
+    }
+});
 // Log para pegar o ID no início
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
@@ -20,11 +28,20 @@ bot.onText(/\/start/, (msg) => {
 
 bot.on('polling_error', (error) => console.log(`[Telegram Error]: ${error.message}`));
 
-export const enviarAlertaQueda = async (): Promise<void> => {
+export const enviarAlertaQueda = async (localizacao: packetBot): Promise<void> => {
+    const linkMapa = `https://www.google.com/maps/search/?api=1&query=${localizacao.latitude},${localizacao.longitude}`;
+
     const mensagem = `
-🚨 **CUIDADO!!! SEU IDOSO CAIU** 🚨
+⚠ **PERIGO: QUEDA DETECTADA!** ⚠
+
+O sistema detectou um acidente.
+                
+📅 **Horário:** ${new Date().toLocaleString('pt-BR')}
+
+📍 **Localização: ${linkMapa}**
+
 _Verifique imediatamente!_
-`;
+                    `;
 
     try {
         await bot.sendMessage(chatId, mensagem, { parse_mode: 'Markdown' });
@@ -35,11 +52,20 @@ _Verifique imediatamente!_
 };
 
 
-export const enviarAlertaDeAreaSegura = async (): Promise<void> => {
+export const enviarAlertaDeAreaSegura = async (localizacao: packetBot): Promise<void> => {
+    const linkMapa = `https://www.google.com/maps/search/?api=1&query=${localizacao.latitude},${localizacao.longitude}`;
+
     const mensagem = `
-🚨 **CUIDADO!!! SEU IDOSO JOSE SAIU DE CASA** 🚨
+⚠🗺 **PERIGO: FUGA DO IDOSO!** ⚠🗺
+
+O sistema detectou uma fuga do idoso
+                
+📅 **Horário:** ${new Date().toLocaleString('pt-BR')}
+
+📍 **Localização: ${linkMapa}**
+
 _Verifique imediatamente!_
-`;
+                    `;
     try {
         await bot.sendMessage(chatId, mensagem, { parse_mode: 'Markdown' });
         console.log(`Alerta enviado para ${chatId}`);

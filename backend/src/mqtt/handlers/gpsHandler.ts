@@ -30,7 +30,7 @@ export async function handleGpsMessage(packet: any, client: any) {
             console.log(`Usuário ${usuarioId} está dentro da área segura.`);
         } else {
             console.log(`Usuário ${usuarioId} saiu da área segura!`);
-            enviarAlertaDeAreaSegura();
+            enviarAlertaDeAreaSegura(pontoAtual);
             // Precisa de refatoração um dia meus amigos, função repetida no sistema para cada tipo diferente de alerta
             await Alerta.create({
             tipoAlerta: "Área Segura",

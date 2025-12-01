@@ -150,7 +150,7 @@ export class AvisosComponent implements OnInit {
       return 'O sistema detectou um impacto brusco. Verifique o paciente.';
     }
     if (tipo === 'area_segura') {
-      return 'O paciente ultrapassou os limites e saiu da área segura definida.';
+      return 'O paciente ultrapassou os limites e saiu da área segura definida  .';
     }
     return 'Notificação do sistema.';
   }

@@ -82,7 +82,7 @@ void task_gps(void * params)
             ESP_LOGW("GPS_TASK", "Sem sinal de satélite...");
         }
 
-        vTaskDelay(60000 / portTICK_PERIOD_MS);
+        vTaskDelay(5000 / portTICK_PERIOD_MS);
     }
 }
 
@@ -179,5 +179,5 @@ void app_main(void)
     // Task do GPS (Prioridade baixa, 2)
     xTaskCreate(task_gps, "GpsTask", 4096, NULL, 2, NULL);
     // Task de Queda (Prioridade Alta, 10)
-    // xTaskCreate(task_detector_quedas, "FallTask", 4096, NULL, 10, NULL);
+    xTaskCreate(task_detector_quedas, "FallTask", 4096, NULL, 10, NULL);
 }
