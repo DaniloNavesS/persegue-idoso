@@ -18,7 +18,7 @@ export class LocalizacaoAtualComponent implements OnInit, AfterViewInit, OnDestr
   readonly currentLocation = signal<{ lat: number; lng: number } | null>(null);
   readonly isTracking = signal(false);
 
-  private usuarioId = 123; // ID fixo (pode vir via input ou rota)
+  private usuarioId = 1;
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,

@@ -8,7 +8,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
         </svg>
       </button>
-      <div class="font-semibold tracking-tight">Senior Safe</div>
+      <div class="font-semibold tracking-tight">Persegue Idosos</div>
       <div class="w-6"></div>
     </div>
   </header>
@@ -30,7 +30,6 @@
       </div>
 
       <nav class="py-3">
-        <!-- GPS group with accordion -->
         <div class="px-2">
           <button type="button" class="w-full flex items-center justify-between gap-3 px-2 py-2 text-sm hover:bg-black/5 rounded"
                   (click)="toggleGps()">
@@ -53,9 +52,7 @@
             </div>
           }
         </div>
-
-        <!-- Informações do Paciente group with accordion -->
-        <div class="px-2 mt-2">
+        <!-- <div class="px-2 mt-2">
           <button type="button" class="w-full flex items-center justify-between gap-3 px-2 py-2 text-sm hover:bg-black/5 rounded"
                   (click)="toggleInformacoesPaciente()">
             <span class="flex items-center gap-3">
@@ -69,15 +66,14 @@
             </svg>
           </button>
 
-          <!-- Subitems -->
           @if (isInformacoesPacienteOpen()) {
             <div class="mt-1 ml-7 flex flex-col">
               <a routerLink="/informacoes-paciente" routerLinkActive="bg-black/5" (click)="closeSidebar()" class="px-2 py-1.5 text-xs rounded hover:bg-black/5">Monitoramento de Saúde</a>
             </div>
           }
-        </div>
+        </div> -->
 
-        <!-- Avisos group with accordion -->
+        
         <div class="px-2 mt-2">
           <button type="button" class="w-full flex items-center justify-between gap-3 px-2 py-2 text-sm hover:bg-black/5 rounded"
                   (click)="toggleAvisos()">
@@ -92,7 +88,6 @@
             </svg>
           </button>
 
-          <!-- Subitems -->
           @if (isAvisosOpen()) {
             <div class="mt-1 ml-7 flex flex-col">
               <a routerLink="/avisos" routerLinkActive="bg-black/5" (click)="closeSidebar()" class="px-2 py-1.5 text-xs rounded hover:bg-black/5">Alertas e Notificações</a>
@@ -100,8 +95,8 @@
           }
         </div>
 
-        <!-- Configurações group with accordion -->
-        <div class="px-2 mt-2">
+    
+        <!-- <div class="px-2 mt-2">
           <button type="button" class="w-full flex items-center justify-between gap-3 px-2 py-2 text-sm hover:bg-black/5 rounded"
                   (click)="toggleConfiguracoes()">
             <span class="flex items-center gap-3">
@@ -116,13 +111,12 @@
             </svg>
           </button>
 
-          <!-- Subitems -->
           @if (isConfiguracoesOpen()) {
             <div class="mt-1 ml-7 flex flex-col">
               <a routerLink="/configuracoes" routerLinkActive="bg-black/5" (click)="closeSidebar()" class="px-2 py-1.5 text-xs rounded hover:bg-black/5">Configurações Gerais</a>
             </div>
           }
-        </div>
+        </div> -->
       </nav>
 
       <div class="mt-auto px-4 py-3 border-t border-black/10 text-xs text-black/60">

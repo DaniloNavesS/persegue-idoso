@@ -1,6 +1,6 @@
-// src/mqtt/handlers/gpsHandler.ts
-// src/mqtt/handlers/gpsHandler.ts
+import { enviarAlertaDeAreaSegura } from "../../bot";
 import { GpsUsuario } from "../../models/gpsUsuarioModel";
+import { Alerta } from "../../models/alertaModel";
 import { verificarSeDentroAreaSegura } from "../../services/gpsService";
 
 interface Coordenada {
@@ -30,6 +30,13 @@ export async function handleGpsMessage(packet: any, client: any) {
             console.log(`Usuário ${usuarioId} está dentro da área segura.`);
         } else {
             console.log(`Usuário ${usuarioId} saiu da área segura!`);
+            enviarAlertaDeAreaSegura();
+            // Precisa de refatoração um dia meus amigos, função repetida no sistema para cada tipo diferente de alerta
+            await Alerta.create({
+            tipoAlerta: "Área Segura",
+            timestamp: new Date()
+            });
+
         }
 
     } catch (error) {
